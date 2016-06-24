@@ -23,7 +23,6 @@ amqp.connect(url, function (err, conn) {
                 }
 
                 console.log(" [x] Received Host: '%s', Path: '%s'", json.host, json.path);
-                console.log(" [x] Will call the Checkout now to store the order");
 
                 var options = {
                     host: json.host,
